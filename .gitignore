@@ -1,0 +1,38 @@
+# Node.js dependencies
+node_modules/
+
+# Cypress test output
+cypress/videos/
+cypress/screenshots/
+cypress/reports/
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+
+# IDE-specific files
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignore coverage results (if any)
+coverage/
+*.lcov
+
+# GitHub Pages generated files
+gh-pages/
