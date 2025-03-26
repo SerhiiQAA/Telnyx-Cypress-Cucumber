@@ -23,15 +23,15 @@ Technologies used:
 ---
 
 ## Steps to Install
-1. **Clone the repository**:
+1. **Clone the repository:**
    ```bash
    git clone <repository-url>
    cd <repository-name>
 
-2. **Install dependencies:**:
+2. **Install dependencies:**
    ```bash
    npm install
-3. **Verify Cypress installation:**:
+3. **Verify Cypress installation:**
    ```bash
    npx cypress verify
 
