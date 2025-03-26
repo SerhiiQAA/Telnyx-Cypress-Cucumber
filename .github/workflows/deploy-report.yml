@@ -1,4 +1,4 @@
-name: Deploy Latest Mochawesome Report
+name: Deploy Mochawesome Report
 
 on:
   push:
@@ -22,14 +22,53 @@ jobs:
         run: npm ci
 
       - name: Run Cypress Tests
-        run: npm run test:desktop:headless 
+        run: npx cypress run
+
       - name: Rename latest report to index.html
         run: |
-          latest_report=$(ls -t ./cypress/reports/*.html | head -n 1) # Пошук останнього звіту
-          mv "$latest_report" ./cypress/reports/index.html # Перейменування на index.html
+          latest_report=$(ls -t ./cypress/reports/index*.html | head -n 1)
+          mv "$latest_report" ./cypress/reports/index.html
 
       - name: Deploy Report
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} 
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./cypress/reports
+
+
+
+# name: Deploy Latest Mochawesome Report
+
+# on:
+#   push:
+#     branches:
+#       - master 
+
+# jobs:
+#   deploy-report:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v3
+
+#       - name: Set up Node.js
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: 'lts/*'
+
+#       - name: Install dependencies
+#         run: npm ci
+
+#       - name: Run Cypress Tests
+#         run: npm run test:desktop:headless 
+#       - name: Rename latest report to index.html
+#         run: |
+#           latest_report=$(ls -t ./cypress/reports/*.html | head -n 1) # Пошук останнього звіту
+#           mv "$latest_report" ./cypress/reports/index.html # Перейменування на index.html
+
+#       - name: Deploy Report
+#         uses: peaceiris/actions-gh-pages@v3
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }} 
+#           publish_dir: ./cypress/reports
