@@ -4,7 +4,7 @@ node_modules/
 # Cypress test output
 cypress/videos/
 cypress/screenshots/
-cypress/reports/
+
 
 # Environment variables and secrets
 .env
@@ -34,5 +34,4 @@ Thumbs.db
 coverage/
 *.lcov
 
-# GitHub Pages generated files
-gh-pages/
+
