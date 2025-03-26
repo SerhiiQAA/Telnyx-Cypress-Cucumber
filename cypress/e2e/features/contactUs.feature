@@ -10,7 +10,6 @@ Feature: Contact Us Page
   Scenario: Talk to an expert with empty fields / TC 2
     Given I open the Contact Us page
     When I submit the Contact Us form
-    # Then I should see the error message "This field is required." for Reason for Contact
     Then I should see the error message "This field is required." for "First Name"
 
   Scenario: Talk to an expert with empty "First Name" field / TC 3

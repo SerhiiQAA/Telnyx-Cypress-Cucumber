@@ -6,7 +6,7 @@ class GlobalCoveragePage {
     receiveEmailsCheckbox: () => cy.get('#mktoCheckbox_14265_0'),
     submitButton: () => cy.get('[type="submit"]'),
     successMsg: () => cy.get('h1 .c-PJLV'),
-    firstNameErrorMsg: () => cy.get('#ValidMsgFirstName'), // Елементи залишені для прямого використання
+    firstNameErrorMsg: () => cy.get('#ValidMsgFirstName'), 
     lastNameErrorMsg: () => cy.get('#ValidMsgLastName'),
     emailErrorMsg: () => cy.get('#ValidMsgEmail'),
   };

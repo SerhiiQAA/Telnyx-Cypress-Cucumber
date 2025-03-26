@@ -9,7 +9,6 @@
     "types": ["cypress", "@cucumber/cucumber"]
   },
   "include": ["cypress/**/*.ts", "cypress/features/**/*.feature"]
-  // "exclude": ["node_modules"]
 }
 
   
