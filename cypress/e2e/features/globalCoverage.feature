@@ -22,7 +22,7 @@ Feature: Global Coverage Page Form
     Given I open the Global Coverage page
     When I fill out the Global Coverage form without "Last Name"
     And I submit the Global Coverage form
-    Then I should see the error message "This field is required." for "Last Name"
+    Then I should see the error message "This field is required.S" for "Last Name"
 
   Scenario: Submit form with empty "Email" field / TC 15
     Given I open the Global Coverage page
