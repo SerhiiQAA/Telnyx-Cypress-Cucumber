@@ -28,4 +28,4 @@ Feature: Global Coverage Page Form
     Given I open the Global Coverage page
     When I fill out the Global Coverage form without "Email"
     And I submit the Global Coverage form
-    Then I should see the error message "Must be valid email. example@yourdomain.com" for "Email"
+    Then I should see the error message "Must be valid email. example@yourdomain.Scom" for "Email"
