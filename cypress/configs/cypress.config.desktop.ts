@@ -23,8 +23,8 @@ export default defineConfig({
     },
     reporter: "cypress-mochawesome-reporter",
     reporterOptions: {
-      reportDir: "cypress/reports/mobile",
-      overwrite: false,
+      reportDir: "cypress/reports/desktop",
+      overwrite: true,
       html: true,
       json: true,
       charts: true,

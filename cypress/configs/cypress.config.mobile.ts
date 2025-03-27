@@ -3,7 +3,7 @@ const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
 const { addCucumberPreprocessorPlugin } = require("@badeball/cypress-cucumber-preprocessor");
 const { createEsbuildPlugin } = require("@badeball/cypress-cucumber-preprocessor/esbuild");
 
-module.exports = defineConfig({
+export default defineConfig({
   e2e: {
     baseUrl: "https://telnyx.com",
     viewportWidth: 375,
@@ -24,7 +24,7 @@ module.exports = defineConfig({
     reporter: "cypress-mochawesome-reporter",
     reporterOptions: {
       reportDir: "cypress/reports/mobile",
-      overwrite: false,
+      overwrite: true,
       html: true,
       json: true,
       charts: true,
