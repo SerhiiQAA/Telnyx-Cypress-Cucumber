@@ -64,7 +64,7 @@ jobs:
         run: npm run test:desktop:headless 
       - name: Rename latest report to index.html
         run: |
-          mv ./cypress/reports/index.html ./cypress/reports/index.html 
+          echo
 
       - name: Deploy Report
         uses: peaceiris/actions-gh-pages@v3
