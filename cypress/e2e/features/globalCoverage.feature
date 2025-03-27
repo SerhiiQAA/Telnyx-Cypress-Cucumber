@@ -16,16 +16,16 @@ Feature: Global Coverage Page Form
     Given I open the Global Coverage page
     When I fill out the Global Coverage form without "First Name"
     And I submit the Global Coverage form
-    Then I should see the error message "This field is required.S" for "First Name"
+    Then I should see the error message "This field is required." for "First Name"
 
   Scenario: Submit form with empty "Last Name" field / TC 14
     Given I open the Global Coverage page
     When I fill out the Global Coverage form without "Last Name"
     And I submit the Global Coverage form
-    Then I should see the error message "This field is required.S" for "Last Name"
+    Then I should see the error message "This field is required." for "Last Name"
 
   Scenario: Submit form with empty "Email" field / TC 15
     Given I open the Global Coverage page
     When I fill out the Global Coverage form without "Email"
     And I submit the Global Coverage form
-    Then I should see the error message "Must be valid email. example@yourdomain.Scom" for "Email"
+    Then I should see the error message "Must be valid email. example@yourdomain.com" for "Email"
