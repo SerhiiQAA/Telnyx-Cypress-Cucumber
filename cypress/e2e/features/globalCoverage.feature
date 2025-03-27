@@ -16,7 +16,7 @@ Feature: Global Coverage Page Form
     Given I open the Global Coverage page
     When I fill out the Global Coverage form without "First Name"
     And I submit the Global Coverage form
-    Then I should see the error message "This field is required." for "First Name"
+    Then I should see the error message "This field is required.S" for "First Name"
 
   Scenario: Submit form with empty "Last Name" field / TC 14
     Given I open the Global Coverage page
