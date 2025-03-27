@@ -61,4 +61,4 @@ You can run tests on various devices and browsers using the scripts defined in p
 
 1.  **Open the latest test report:**
     ```bash
-    npm run test:desktop:firefox:headless
+    npm run open:latest-report
