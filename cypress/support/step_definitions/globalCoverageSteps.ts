@@ -44,6 +44,6 @@ Then('I should see the success message {string} for Global Coverage form', (expe
   cy.contains(expectedMessage).should('be.visible');
 });
 
-Then('I should see the error message {string} for {string}', (expectedMessage: string, field: string) => {
+Then('I should see the error message {string} for {string} on Global Coverage form', (expectedMessage: string, field: string) => {
   cy.contains(expectedMessage).should('be.visible');
 });
