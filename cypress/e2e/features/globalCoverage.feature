@@ -19,7 +19,7 @@ Feature: Global Coverage Page Form
     Then I should see the error message "<ExpectedErrorMessage>" for "<MissingField>" on Global Coverage form
 
     Examples:
-      | MissingField | ExpectedErrorMessage                            |
-      | First Name   | This field is required.                        |
-      | Last Name    | This field is required.                        |
-      | Email        | Must be valid email. example@yourdomain.com    |
+      | MissingField | ExpectedErrorMessage                        |
+      | First Name   | This field is required.                     |
+      | Last Name    | This field is required.                     |
+      | Email        | Must be valid email. example@yourdomain.com |

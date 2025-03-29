@@ -20,14 +20,14 @@ Feature: Contact Us Page
     Then I should see the error message "<ExpectedErrorMessage>" for "<MissingField>" on Contact Us form
 
     Examples:
-      | MissingField               | ExpectedErrorMessage                                   |
-      | First Name                 | This field is required.                               |
-      | Last Name                  | This field is required.                               |
-      | Business email             | Must be valid email. example@yourdomain.com          |
-      | Phone number               | Thank you.                                           |
-      | Company website            | This field is required.                               |
-      | Please describe your request | This field is required.                              |
-      | How did you hear about Telnyx? | This field is required.                             |
+      | MissingField                   | ExpectedErrorMessage                        |
+      | First Name                     | This field is required.                     |
+      | Last Name                      | This field is required.                     |
+      | Business email                 | Must be valid email. example@yourdomain.com |
+      | Phone number                   | Thank you.                                  |
+      | Company website                | This field is required.                     |
+      | Please describe your request   | This field is required.                     |
+      | How did you hear about Telnyx? | This field is required.                     |
 
   Scenario: Talk to an expert with unchecked "I want to receive marketing emails" checkbox / TC 10
     Given I open the Contact Us page
