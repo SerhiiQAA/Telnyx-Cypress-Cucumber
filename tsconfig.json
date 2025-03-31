@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["esnext", "dom"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": ["cypress", "@cucumber/cucumber"]
+  },
+  "include": ["cypress/**/*.ts", "cypress/features/**/*.feature"]
+}
+
+  
+  
+  
