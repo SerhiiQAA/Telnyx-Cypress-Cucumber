@@ -1,4 +1,4 @@
-Feature: Contact Us Page
+Feature: Contact Us Page Form
 
   Scenario: Talk to an expert with valid data / TC 1
     Given I open the Contact Us page
