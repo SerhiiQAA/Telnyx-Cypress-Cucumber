@@ -13,7 +13,7 @@
     "test:desktop:chrome:headless": "cypress run --browser chrome --config-file cypress/configs/cypress.config.desktop.ts",
     "test:desktop:firefox:headless": "cypress run --browser firefox --config-file cypress/configs/cypress.config.desktop.ts",
     "test:desktop:electron:headless": "cypress run --browser electron --config-file cypress/configs/cypress.config.desktop.ts",
-    "open:latest-report": "ls -t cypress/reports/*.html | head -n 1 | xargs xdg-open"
+    "open:latest-report": "xdg-open cucumber-report.html"
   },
   "author": "Serhii",
   "license": "ISC",
