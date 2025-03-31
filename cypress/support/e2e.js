@@ -16,5 +16,4 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 import "@badeball/cypress-cucumber-preprocessor";
-// import 'allure-cypress';
-// import 'cypress-mochawesome-reporter/register';
+
