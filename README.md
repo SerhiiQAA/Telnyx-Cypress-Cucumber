@@ -1,7 +1,7 @@
-# Automated Testing with Cypress, TypeScript, and Mocha Reporter
+# Automated Testing with Cypress, TypeScript, and Cucumber Reporter
 
 ## Summary
-This repository is designed for automated testing using **Cypress**, **TypeScript (TS)**, **OOP (Object-Oriented Programming)**, **Cucumber**, and **Mocha Reporter**. It supports testing across multiple devices (desktop, mobile, and tablets) and generates detailed HTML reports using `cypress-mochawesome-reporter`.
+This repository is designed for automated testing using **Cypress**, **TypeScript (TS)**, **OOP (Object-Oriented Programming)**, **Cucumber**, and **Cucumber Reporter**. It supports testing across multiple devices (desktop, mobile, and tablets) and generates detailed HTML reports.
 
 The goal of this project is to provide a streamlined setup for test execution, reporting, and adaptability to various testing needs.
 
@@ -18,7 +18,7 @@ Technologies used:
 - **Cypress** for end-to-end test automation.
 - **TypeScript (TS)** for type-safe programming.
 - **Cucumber** for Behavior-Driven Development (BDD).
-- **Mocha Reporter** for generating comprehensive test reports.
+- **Cucumber Reporter** for generating comprehensive test reports.
 
 ---
 
