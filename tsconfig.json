@@ -8,7 +8,7 @@
     "skipLibCheck": true,
     "types": ["cypress", "@cucumber/cucumber"]
   },
-  "include": ["cypress/**/*.ts", "cypress/features/**/*.feature"]
+  "include": ["cypress/**/*", "cypress/features/**/*.feature"]
 }
 
   

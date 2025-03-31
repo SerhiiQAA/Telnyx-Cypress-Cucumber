@@ -22,4 +22,4 @@ Feature: Global Coverage Page Form
       | MissingField | ExpectedErrorMessage                        |
       | First Name   | This field is required.                     |
       | Last Name    | This field is required.                     |
-      | Email        | Must be valid email. example@yourdomainS.com |
+      | Email        | Must be valid email. example@yourdomain.com |
