@@ -17,4 +17,4 @@
 import './commands'
 import "@badeball/cypress-cucumber-preprocessor";
 // import 'allure-cypress';
-import 'cypress-mochawesome-reporter/register';
+// import 'cypress-mochawesome-reporter/register';

@@ -9,19 +9,10 @@ module.exports = defineConfig({
       on('file:preprocessor', createBundler({ plugins: [createEsbuildPlugin(config)] }));
       await addCucumberPreprocessorPlugin(on, config);
 
-      require('cypress-mochawesome-reporter/plugin')(on);
-
       return config;
     },
     specPattern: 'cypress/e2e/features/*.feature',
     baseUrl: 'https://telnyx.com',
-    reporter: 'cypress-mochawesome-reporter', 
-    reporterOptions: {
-      reportDir: 'cypress/reports',
-      overwrite: true,
-      html: true,
-      json: true,
-      charts: true, 
-    },
+    
   },
 });

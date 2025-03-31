@@ -1,4 +1,4 @@
-name: Deploy Latest Mochawesome Report
+name: Deploy Latest Cucumber Report
 
 on:
   push:
@@ -24,22 +24,69 @@ jobs:
       - name: Run Cypress Tests
         run: npm run test:desktop:headless || true
 
-      - name: Verify index.html exists
+      - name: Verify cucumber-report.html exists
         run: |
-          if [ ! -f ./cypress/reports/index.html ]; then
-            echo "index.html file not found! Check your report generation step."
+          if [ ! -f ./cucumber-report.html ]; then
+            echo "cucumber-report.html file not found! Check your report generation step."
             exit 1
           fi
 
       - name: List generated files
         run: |
-          ls -la ./cypress/reports
+          ls -la .
 
       - name: Deploy Report
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./cypress/reports
+          publish_dir: .
+
+
+
+
+
+# name: Deploy Latest Mochawesome Report
+
+# on:
+#   push:
+#     branches:
+#       - master 
+
+# jobs:
+#   deploy-report:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v3
+
+#       - name: Set up Node.js
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: 'lts/*'
+
+#       - name: Install dependencies
+#         run: npm ci
+
+#       - name: Run Cypress Tests
+#         run: npm run test:desktop:headless || true
+
+#       - name: Verify index.html exists
+#         run: |
+#           if [ ! -f ./cypress/reports/index.html ]; then
+#             echo "index.html file not found! Check your report generation step."
+#             exit 1
+#           fi
+
+#       - name: List generated files
+#         run: |
+#           ls -la ./cypress/reports
+
+#       - name: Deploy Report
+#         uses: peaceiris/actions-gh-pages@v3
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+#           publish_dir: ./cypress/reports
 
 
 
