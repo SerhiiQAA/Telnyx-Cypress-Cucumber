@@ -24,17 +24,12 @@ jobs:
       - name: Run Cypress Tests
         run: npm run test:desktop:headless || true
 
-      - name: Cleanup Old Reports
+      - name: Rename cucumber-report.html to index.html
         run: |
-          if [ -d ./cypress/reports ]; then
-            echo "Removing old Mocha reports..."
-            rm -rf ./cypress/reports
-          fi
-
-      - name: Verify cucumber-report.html exists
-        run: |
-          if [ ! -f ./cucumber-report.html ]; then
-            echo "cucumber-report.html file not found! Check your report generation step."
+          if [ -f ./cucumber-report.html ]; then
+            mv ./cucumber-report.html ./index.html
+          else
+            echo "cucumber-report.html file not found!"
             exit 1
           fi
 
