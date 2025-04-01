@@ -74,5 +74,3 @@ class ContactUsPage {
 }
 
 export default new ContactUsPage();
-
-
